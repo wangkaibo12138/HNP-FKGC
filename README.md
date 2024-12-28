@@ -23,13 +23,13 @@ Download the datasets and extract to the project root folder.
 ## Train
 NELL 
 ```bash
-python main.py --dataset NELL-One --data_path ./NELL --few 5 --data_form Pre-Train --nellone_5shot_intrain --device 0 --batch_size 128 --flow Planar --g_batch 1024
+python main.py --dataset NELL-One --data_path ./NELL --few 5 --data_form Pre-Train --nellone_5shot_intrain --device 0 --batch_size 128 
 ```
             
 
 FB15K-237 
 ```bash
-python main.py --dataset FB15K-One --data_path ./FB15K --few 5 --data_form Pre-Train --fb15k_5shot_intrain --device 0 --batch_size 128 --flow Planar --g_batch 1024 --eval_batch_size 128 --K 14
+python main.py --dataset FB15K-One --data_path ./FB15K --few 5 --data_form Pre-Train --fb15k_5shot_intrain --device 0 --batch_size 128 --K 14
 ```
 
 ## Eval
