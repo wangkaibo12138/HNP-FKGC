@@ -53,8 +53,8 @@ def get_params():
 
     if args.dataset == 'NELL-One':
         params['embed_dim'] = 100
-    elif args.dataset == 'Wiki-One':
-        params['embed_dim'] = 50
+    elif args.dataset == 'FB15K237-One':
+        params['embed_dim'] = 100
 
     params['device'] = torch.device('cuda:' + str(args.device))
 
